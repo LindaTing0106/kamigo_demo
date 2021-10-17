@@ -10,11 +10,11 @@ Rails.application.routes.draw do
   # 加入好友時的自我介紹訊息
   get "follow", to: "home#follow"
 
-  # 加入群組時的自我介紹訊息
-  get "join", to: "home#follow"
+  get "阿丁", to: "home#didi"
+  get "丁", to: "home#didi"
+  get "丁子函", to: "home#didi"
+  get "寶寶", to: "home#didi"
 
-  # 有人加入群組時的歡迎訊息
-  get "memberJoined", to: "home#member_join"
 
   # todo
   resources :todos
