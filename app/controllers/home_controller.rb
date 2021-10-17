@@ -12,8 +12,6 @@ class HomeController < ApplicationController
     displayName = params.dig(:profile, :displayName)
     if displayName == "子函"
       @welcom = "哈囉大正妹"
-    if displayName == "kavin"
-      @welcom ="4牛阿娟ㄟ(ˋ0.0ˊ)"
     else
       @welcom = "你誰ㄚ你"
     end
