@@ -8,6 +8,15 @@ class HomeController < ApplicationController
   def share_bot_flex
   end
 
+  def follow
+    displayName = params.dig(:profile, :displayName)
+    if displayName == "子函"
+      @welcom = "哈囉大正妹"
+    else
+      @welcom = "你誰ㄚ你"
+    end
+  end
+  
   def member_join
     @profiles = params.dig(:payload, :joined, :members).map{|member| get_profile(member.dig(:userId)) }
   end
