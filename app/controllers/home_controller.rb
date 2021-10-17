@@ -11,7 +11,7 @@ class HomeController < ApplicationController
   def missing
     miss = ["我在忙","在想尼阿","在你心裡拉ㄎㄎ"]
     keyword = params[:word]
-    if keyword.include? "?" || keyword.include? "勒" || keyword.include? "哩" || keyword.include? "呢" || keyword.include? "ㄋ"
+    if keyword.include? "?"
       @iam = "#{miss.sample}"
     end
   end
