@@ -8,6 +8,14 @@ class HomeController < ApplicationController
   def share_bot_flex
   end
 
+  def missing
+    keyword = params[:word]
+    if keyword.include? "?"
+      @iam = "在你心裡拉ㄎㄎ"
+    end
+  end
+      
+
   def follow
     displayName = params.dig(:profile, :displayName)
     if displayName == "子函"

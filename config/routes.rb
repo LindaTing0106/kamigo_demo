@@ -9,12 +9,14 @@ Rails.application.routes.draw do
 
   # 加入好友時的自我介紹訊息
   get "follow", to: "home#follow"
-
+  #呼叫阿丁
   get "阿丁", to: "home#didi"
   get "丁", to: "home#didi"
   get "丁子函", to: "home#didi"
   get "寶寶", to: "home#didi"
 
+  #阿丁失蹤
+  get "人(*word)", to: "home#missing"
 
   # todo
   resources :todos
