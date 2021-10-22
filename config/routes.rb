@@ -21,7 +21,7 @@ Rails.application.routes.draw do
   get "狼(*word)", to: "home#missing"
 
   #讀書軒
-  get "(*word)大碩(*otherword)", to: "home#hardworking"
+  get "大碩", to: "home#hardworking"
   # todo
   resources :todos
 
