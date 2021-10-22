@@ -17,7 +17,11 @@ Rails.application.routes.draw do
 
   #阿丁失蹤
   get "人(*word)", to: "home#missing"
+  get "郎(*word)", to: "home#missing"
+  get "狼(*word)", to: "home#missing"
 
+  #讀書軒
+  get "(*word)大碩(*otherword)", to: "home#hardworking"
   # todo
   resources :todos
 

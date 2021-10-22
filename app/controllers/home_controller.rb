@@ -11,10 +11,17 @@ class HomeController < ApplicationController
   def missing
     miss = ["我在忙","在想尼阿","在你心裡拉ㄎㄎ"]
     keyword = params[:word]
-    if keyword["?"] || keyword["勒"]|| keyword["哩"]|| keyword["ㄋ"]
+    if keyword["?"] || keyword["勒"]|| keyword["哩"]|| keyword["ㄋ"]|| keyword["？"]
       @iam = "#{miss.sample}"
     end
   end
+
+  def hardworking
+    hardwork =["挖喔","認真哥？","阿不9好認真","利嗨喔"]
+    @study ="#{hardwork.sample}"
+  end
+  
+    
       
 
   def follow
